@@ -1,16 +1,16 @@
 # Plantar Pressure Reconstruction Using Compressive Sensing
 
-This is the MATLAB code for the paper: [Spatially-Continuous Plantar Pressure Reconstruction Using Compressive Sensing](http://proceedings.mlr.press/v68/farnoosh17a.html) (MLHC 2017)
+This is the MATLAB code for the paper [Spatially-Continuous Plantar Pressure Reconstruction Using Compressive Sensing](http://proceedings.mlr.press/v68/farnoosh17a.html)
  
 ![Algorithm framewrk](Images/Framewrk.png)
 
-* The m-files `KSVD.m`, `KSVD_NN.m`, `OMP.m`, `OMPerr.m`, `NN_BP.m`, and `my_im2col.m` are taken from [here](https://github.com/hbtsai/dip_sr/tree/master/matlab_ref/Lib/KSVD) with slight modifications. These m-files implement K-SVD algorithm proposed in: [The K-SVD: An Algorithm for Designing of Overcomplete Dictionaries for Sparse Representation](https://sites.fas.harvard.edu/~cs278/papers/ksvd.pdf), written by M. Aharon, M. Elad, and A.M. Bruckstein.
+* The m-files `KSVD.m`, `KSVD_NN.m`, `OMP.m`, `OMPerr.m`, `NN_BP.m`, and `my_im2col.m` are taken from [here](https://github.com/hbtsai/dip_sr/tree/master/matlab_ref/Lib/KSVD) with slight modifications. These m-files implement K-SVD algorithm proposed in: [The K-SVD: An Algorithm for Designing of Overcomplete Dictionaries for Sparse Representation](https://sites.fas.harvard.edu/~cs278/papers/ksvd.pdf).
  
 ## Dataset
 
 The dataset comes from the original work of [A knowledge-based modeling for plantar pressure image reconstruction](https://ieeexplore.ieee.org/abstract/document/6813648/) and is placed in `./Dataset/` directory. It includes plantar pressure readings from 5 healthy subjects (right/left foot), and is augmented with the corresponding GMM centroids and variances from their method, as well as other information/preprocessing needed for our method.   
 
-## 3. Training and Evaluation 
+## Training and Evaluation 
 
 * Run `learningtest.m` and set `dict.learn` flag to learn dictionary, and get evaluation plots for each specified subject and foot. You may set `dict.learn = 0` if you wish to use pretrained dictionaries in `./Dictionaries/` directory to get evaluation plots.
 

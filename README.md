@@ -2,7 +2,9 @@
 
 This is the MATLAB code for the paper [Spatially-Continuous Plantar Pressure Reconstruction Using Compressive Sensing](http://proceedings.mlr.press/v68/farnoosh17a.html)
  
-![Algorithm framewrk](Images/Framewrk.png)
+<p align="center" width="100%">
+  <img src="Images/Framewrk.png" width="600"> 
+</p>
 
 * The m-files `KSVD.m`, `KSVD_NN.m`, `OMP.m`, `OMPerr.m`, `NN_BP.m`, and `my_im2col.m` are taken from [here](https://github.com/hbtsai/dip_sr/tree/master/matlab_ref/Lib/KSVD) with slight modifications. These m-files implement K-SVD algorithm proposed in: [The K-SVD: An Algorithm for Designing of Overcomplete Dictionaries for Sparse Representation](https://sites.fas.harvard.edu/~cs278/papers/ksvd.pdf).
  
